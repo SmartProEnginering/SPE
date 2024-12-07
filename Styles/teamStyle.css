@@ -8,7 +8,7 @@
     display: grid;
     grid-template-rows: 0.8fr 3fr 0.2fr;
     grid-template-columns: auto;
-    height: 330vh;
+    height: 376vh;
     gap: 1em;
     grid-template-areas:
     'header1'
@@ -32,6 +32,7 @@
 }
 .teamContainer-body {
     grid-area: body1;
+    overflow: hidden;
 }
 .teamContainer-footer {
     grid-area: footer1;
@@ -101,6 +102,13 @@
 }
 /* --------------------- Nav ---------------------*/
 
+h1 {
+    color: #fafdff;
+    font-size: 64px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
 nav {
     display: flex;
     padding: 2% 6%;
@@ -113,13 +121,7 @@ nav img {
 nav .fa {
     display: none;
 }
-h1 {
-    color: #fafdff;
-    font-size: 64px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-}
+
 .nav-links {
     text-align: right;
 }
@@ -152,19 +154,41 @@ h1 {
 .nav-icon {
     color: #ffffff;
 }
-
+.nav-links #btn {
+    color: #ffffff;
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
 
 @media only screen and (max-width: 550px) {
     h1 {
         color: #ffffff;
         font-size: 30px;
         text-align: center;
-        padding: 20px 0 0 0;
+        margin: 70px 0 0 0;
+    }
+    .teamContainer {
+        display: grid;
+        grid-template-rows: 0.8fr 3fr 0.01fr;
+        grid-template-columns: auto;
+        height: 450vh;
+        gap: 1em;
+        grid-template-areas:
+    'header1'
+    'body1'
+    'footer1';
     }
     .EngineerContainer {
         margin: 50px 20px 0 20px;
         display: grid;
-        grid-template-rows: 30px 200px 330px;
+        grid-template-rows: 30px 200px 430px;
         grid-template-columns: 1fr;
         gap: 1em;
         vertical-align: top;
@@ -226,24 +250,29 @@ h1 {
     }
     .nav-links {
         position: absolute;
-        background: #ffffff;
+        background: #2775A5;
         height: 100vh;
         width: 200px;
         top: 0;
-        display: none;
+        right: -250px;
+        text-align: left;
         z-index: 2;
         transition: 1s;
     }
     .nav-links ul {
         padding: 30px;
     }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
     .nav-links ul li a{
         color: #ffffff;
         text-decoration: none;
         font-weight: bold;
         font-size: 13px;
-    }
-    .show {
-        display: block;
     }
 }
