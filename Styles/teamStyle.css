@@ -149,6 +149,11 @@ h1 {
 .nav-links ul li:hover::after {
     width: 100%;
 }
+.nav-icon {
+    color: #ffffff;
+}
+
+
 @media only screen and (max-width: 550px) {
     h1 {
         color: #ffffff;
