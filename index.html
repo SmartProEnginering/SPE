@@ -2,173 +2,209 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>teamSPE</title>
+    <title> SPE Software </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/teamStyle.css">
+    <link rel="stylesheet" href="Styles/Style2.css">
     <link href="https://fonts.googleapis.com/css2?
      family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
 </head>
 <body>
-<div class="teamContainer">
-    <div class="teamContainer-header">
+<div class="homeContainer">
+    <div class="homeContainer-header">
         <section >
             <nav>
                 <a href="index.html"><img src="Images/SMART_PRO_Transparent_Logo.png" alt="error"></a>
 
-                <div class="nav-links" id="sidebar">
-                    <i class="fa-solid fa-bars fa-2xl nav-icon"></i>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-xmark fa-2xl nav-icon" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="index2.html">
+                        <li><a href="index.html">
                             <i class="fa-solid fa-house fa-lg nav-icon"></i>
                             <span>ACCEUIL</span>
-                            </a></li>
+                        </a></li>
                         <li><a href="products.html">
-                            <i class="fa-solid fa-boxes-stacked fa-xl nav-icon"></i>
+                            <i class="fa-solid fa-boxes-stacked"></i>
                             <span>PRODUITS</span>
-                            </a></li>
+                        </a></li>
                         <li><a href="services.html">
                             <i class="fa-solid fa-handshake fa-xl nav-icon"></i>
                             <span>SERVICES</span>
-                            </a></li>
+                        </a></li>
                         <li><a href="about.html">
                             <i class="fa-solid fa-building fa-lg nav-icon"></i>
                             <span>À PROPOS</span>
-                            </a></li>
+                        </a></li>
                         <li><a href="team.html">
                             <i class="fa-solid fa-people-group fa-xl nav-icon"></i>
                             <span>ÉQUIPE</span>
-                            </a></li>
-                        <li><a href="contact.html">CONTACTE</a></li>
+                        </a></li>
+                        <li><a href="contact.html">
+                            <i class="fa-solid fa-comments fa-xl nav-icon"></i>
+                            <span>CONTACTE</span>
+                        </a></li>
                     </ul>
                 </div>
+                <i class="fa fa-bars fa-2xl nav-icon" id="btn" onclick="showMenu()"></i>
             </nav>
         </section>
         <section>
-            <h1>NOTRE ÉQUIPE</h1>
+            <h1>Smart Pro Engineering</h1>
         </section>
+        <div class="section1">
+            <p>Being a fish farmer has never been easier, thanks to
+                the Smart MAQ Kit!</p>
+            <a href="contact.html" class="hero-btn">Visitez-Nous Pour Savoir Plus</a>
+        </div>
+    </div>
+    <div class="homeContainer-body">
+        <!------------------------ Products ---------------------->
+        <section class="products">
+            <h2>Nos Produits</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+            <div class="row">
+                <div class="products-col">
+                    <img src="Photos/image5.jpg" alt="errorImage">
+                    <h3> Smart MAQ</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque aliquet turpis nulla.</p>
+                </div>
+                <div class="products-col">
+                    <img src="Images/fish-KARMENstudio.png" alt="errorImage">
+                    <h3 > Smart MAQ AI</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Pellentesque aliquet turpis nulla.</p>
+                </div>
+            </div>
+        </section>
+
+        <! ------------------- Services -------------------->
+        <section class="services">
+            <h2>Nos Services</h2>
+            <p> Smart Pro Engineering offre</p>
+
+            <div class="row">
+                <div class="service-col">
+                    <h3>Aquaculture Autonome</h3>
+                    <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit.
+                        Pellentesque aliquet turpis nulla, eleifend faucibus est
+                        sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+                        Donec sit.</p>
+                </div>
+                <div class="service-col">
+                    <h3>Mécaniques</h3>
+                    <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit.
+                        Pellentesque aliquet turpis nulla, eleifend faucibus est
+                        sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+                        Donec sit.</p>
+                </div>
+                <div class="service-col">
+                    <h3>Électroniques</h3>
+                    <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit.
+                        Pellentesque aliquet turpis nulla, eleifend faucibus est
+                        sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+                        Donec sit.</p>
+                </div>
+                <div class="service-col">
+                    <h3>Formations</h3>
+                    <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit.
+                        Pellentesque aliquet turpis nulla, eleifend faucibus est
+                        sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+                        Donec sit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------- Our Team --------------------->
+        <section class="aboutUs">
+            <h2>Notre Équipe</h2>
+            <p>Smart Pro Engineering est composé de jeunes passionné!</p>
+
+            <div class="row">
+                <div class="aboutUs-col">
+                    <img src="Photos/PXL_20241115_083153130.jpg" alt="errorImage">
+                    <div class="layer">
+                        <a href="ourTeam.html#grid-roosevelle"><h3>ING. Roosevelle</h3></a>
+                    </div>
+                </div>
+                <div class="aboutUs-col">
+                    <img src="Photos/PXL_20241111_075737157.jpg" alt="errorImage">
+                    <div class="layer">
+                        <a href="ourTeam.html#grid-césaire"><h3>ING. Césaire</h3></a>
+                    </div>
+                </div>
+                <div class="aboutUs-col">
+                    <img src="Photos/PXL_20241115_083001991.MP.jpg" alt="errorImage">
+                    <div class="layer">
+                        <a href="ourTeam.html#grid-cabrel"><h3>ING. Cabrel</h3></a>
+                    </div>
+                </div>
+                <div class="aboutUs-col">
+                    <img src="Photos/PXL_20241112_085428785.MP.jpg" alt="errorImage">
+                    <div class="layer">
+                        <a href="ourTeam.html#grid-ahmed"><h3>ING. Ahmed</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------ Products ---------------------->
+        <section class="community">
+            <h2>Communauté</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+
+            <div class="row">
+                <div class="community-col">
+                    <img src="Photos/personnel1.jpg">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit.
+                            Pellentesque aliquet turpis nulla, eleifend faucibus est
+                            sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+                            Donec sit.</p>
+                        <h3> Madame Phillomene</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="community-col">
+                    <img src="Photos/personnel1.jpg">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit.
+                            Pellentesque aliquet turpis nulla, eleifend faucibus est
+                            sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus
+                            Donec sit.</p>
+                        <h3> Mr Francis</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <! --------------- Contact Us ----------------->
+        <section class="cta">
+            <h1> Want to pay us a visit?</h1>
+            <a href="" class="hero-btn">CONTACT US</a>
+        </section>
+    </div>
+
+    <! --------------- Footer ------------------- >
+    <div class="homeContainer-footer">
         <section>
-            <p>
-                Rencontrez les esprits derrière Smart Pro Engineering. Au cœur de
-                Smart Pro Engineering se trouve une équipe d'ingénieurs mécatroniques
-                passionnés et innovants qui se consacrent à révolutionner l'aquaculture.
-                Notre équipe rassemble une expertise diversifiée en génie mécanique,
-                génie électrique, systèmes de contrôle et informatique pour créer des
-                solutions de pointe. Ensemble, ils forment une équipe dynamique qui s'engage à développer des solutions
-                d'aquaculture durables et éfficaces. Leurs compétences et leur expérience combinées
-                ont conduit à la création du kit d'aquaculture autonome révolutionnaire, Smart MAQ,
-                conçu pour autonomiser les pisciculteurs et contribuer à un avenir plus durable.
-            </p>
+            <div class="icons">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>© 2024 Smart Pro Engineering</p>
         </section>
-    </div>
-    <div class="teamContainer-body">
-
-        <!------------------- Cabrel E. EDIANGO ----------------------->
-        <div id="grid-cabrel" class="EngineerContainer"
-             style="--container-background: linear-gradient(to left, rgb(51, 153, 102, 1), rgb(3, 148, 128, 1));">
-            <div class="item EngineerHeader-container">
-                <h4>ING. Cabrel E.L. ÉDIANGO</h4>
-            </div>
-            <div class="item EngineerImg-container">
-                <img src="Photos/PXL_20241115_083001991.MP.jpg" alt="error">
-            </div>
-            <div class="item EngineerTxt-container">
-                <p><strong>Cabrel Engolo Loïc ÉDIANGO</strong> est un ingénieur visionnaire en mécanique et IOT, titulaire
-                    d'un Master en Ingénierie des Systèmes Mécatronique, de l'École
-                    Nationale Supérieur de Douala, Cameroun. En tant que porteur du
-                    projet et cerveau de notre équipe, il apporte une richesse d'expérience
-                    et d'innovation à tous les niveaux de nos projets et produits. Le
-                    leadership et l'expertise technique de Cabrel ont joué un rôle déterminant
-                    dans notre succès, notamment en remportant la 1ᵉ édition du PATNUC
-                    en Afrique, qui demeure sous dévéloppé, avec des enjeux préoccupants.
-                </p>
-                <p>
-                    Au-delà de ses impressionnantes réalisations académiques et professionnelles,
-                    Cabrel est un fervent défenseur de la technologie et son potentiel à façonner
-                    l'avenir. Lorsqu'il ne dirige pas notre équipe, vous pourriez le trouer en train
-                    d'expérimenter de nouvelles technologies et d'encadrer de jeunes ingénieurs.
-                </p>
-            </div>
-        </div>
-
-        <!------------------- A. Roosevelle KAMGA ----------------------->
-        <div id="grid-roosevelle" class="EngineerContainer"
-             style="--container-background: linear-gradient(to left, rgb(7, 143, 66, 1), rgb(51, 204, 51, 1));">
-            <div class="item EngineerHeader-container">
-                <h4>ING. A. Roosevelle KAMGA</h4>
-            </div>
-            <div class="item EngineerImg-container">
-                <img src="Photos/PXL_20241115_083153130.jpg" alt="error">
-            </div>
-            <div class="item EngineerTxt-container">
-                <p><strong> Arauld Roosevelle KAMGA</strong> est un ingénieur dynamique en électronique
-                    et en automatisation industrielle, titulaire d'un Master en Ingénierie des Systèmes
-                    Mécatroniques, de l'École Nationale Supérieur Polytechnique de Douala, Cameroun.
-                    Sa passion pour la technologie et son talent pour la résolution de problèmes ont fait
-                    de lui un atout précieux pour notre équipe. L'expertise de Roosevelle en matière de
-                    systèmes électroniques, d'automatisation et d'ingénierie de contrôle a été déterminante
-                    la conception et réalisation du SMART MAQ.
-                </p>
-                <p>
-                    Au-delà de ses compétences techniques, Roosevelle est un joueur d'équipe qui s'épanouit
-                    dans la collaboration. Lorsqu'il n'optimise pas les systèmes, il est probablement
-                    entrain de bricoler.
-                </p>
-            </div>
-        </div>
-
-        <!------------------- A. Césaire CHETCHOUA ----------------------->
-        <div id="grid-césaire"  class="EngineerContainer"
-             style="--container-background: linear-gradient(to left, rgb(255, 102, 0, 1), rgb(242, 156, 7, 1));">
-            <div class="item EngineerHeader-container">
-                <h4>ING. A. Césaire CHETCHOUA</h4>
-            </div>
-            <div class="item EngineerImg-container">
-                <img src="Photos/PXL_20241111_075737157.jpg" alt="error">
-            </div>
-            <div class="item EngineerTxt-container">
-                <p> <strong>Aimé Césaire CHETCHOUA</strong>, un acteur clé de notre équipe d'exploitation.
-                    Césaire est un ingénieur en mécanique et maintenance industrielle qualifié,
-                    titulaire d'un Master en Ingénierie des Systèmes Mécatroniques de l'École
-                    Nationale Supérieur Polytechnique de Douala, Cameroun. Son expertise en
-                    systèmes mécaniques, en automatisation et en processus industriel est inestimable
-                    pour notre. La capacité de Césaire à resoudre des problèmes complexes et à mettre
-                    en œuvre des solutions efficaces a considérablement amélioré nos opérations.
-                     En dehors du travail, Césaire aime travailler sur ces projets personnels.
-                </p>
-            </div>
-        </div>
-
-        <!------------------- Ahmed J.C. NGONINGEH ----------------------->
-        <div id="grid-ahmed" class="EngineerContainer"
-             style="--container-background: linear-gradient(to left, rgb(51, 204, 255, 1), rgb(58, 224, 224, 1));">
-            <div class="item EngineerHeader-container">
-                <h4>ING. Ahmed J.C. NGONINGEH</h4>
-            </div>
-            <div class="item EngineerImg-container">
-                <img src="Photos/PXL_20241112_085428785.MP.jpg" alt="error">
-            </div>
-            <div class="item EngineerTxt-container">
-                <p> Rencontrez <strong>Ahmed Jawani Christmas NGONINGEH</strong>, ingénieur en hardware
-                    et machine learning. Ahmed est un ingénieur talentueux qui a pour passion de
-                    combler le fossé entre le hardware et le software, et les hologrammes aussi.
-                    Titulaire d'un Master en Ingénierie des Systèmes Mécatroniques, de l'École
-                    Nationale Supérieur Polytechnique de Douala, Cameroun, il apporte à notre
-                    équipe un de mélange unique d'ingénierie électronique, d'ingénierie mécanique,
-                    et d'informatique. L'expertise d'Ahmed en conception hardware et machine
-                    learning joue un rôle déterminant dans le développement du SMART MAQ et SMART
-                    MAQ AI.
-                </p>
-                <p>
-                    En dehors du travail, Ahmed aime coder et travailler sur des projets personnels.
-                    Son dévouement à l'innovation et son esprit collaboratif font de lui un atout
-                    précieux pour notre équipe.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="teamContainer-footer">
-        <p>© 2024 Smart Pro Engineering</p>
     </div>
 </div>
 <script src="Scripts/index.js"></script>
