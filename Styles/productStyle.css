@@ -1,16 +1,49 @@
-*{
+/* --------------------- Grid -----------------------*/
+* {
     margin:0;
-    padding:0;
+    padding:1px;
     font-family: 'Poppins', sans-serif;
 }
-.header {
+.productContainer {
+    display: grid;
+    grid-template-rows: 0.8fr 3fr 0.2fr;
+    grid-template-columns: auto;
+    height: 376vh;
+    gap: 1em;
+    grid-template-areas:
+    'header1'
+    'body1'
+    'footer1';
+}
+.productContainer-header {
+    grid-area: header1;
     min-height:100vh;
-    width:100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), transparent), url('https://r4.wallpaperflare.com/wallpaper/483/576/977/1920x1080-px-abstract-hexagon-minimalism-simple-nature-water-hd-art-wallpaper-6990a83d517aad5bf697e8cff071669d.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url('https://r4.wallpaperflare.com/wallpaper/483/576/977/1920x1080-px-abstract-hexagon-minimalism-simple-nature-water-hd-art-wallpaper-6990a83d517aad5bf697e8cff071669d.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
 }
+.productContainer-header p {
+    color: #ffffff;
+    text-align: center;
+    margin: 90px 110px 10px 110px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+.productContainer-body {
+    grid-area: body1;
+    overflow: hidden;
+}
+.productContainer-footer {
+    grid-area: footer1;
+}
+.productContainer-footer p {
+    color: #637075;
+    text-align: center;
+    font-size: 11px;
+    margin: 80px 0 0 0;
+}
+
 nav {
     display: flex;
     padding: 2% 6%;
@@ -47,50 +80,38 @@ nav img {
 .nav-links ul li:hover::after {
     width: 100%;
 }
-.text-box{
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.text-box h1 {
-    font-size: 64px;
-}
-.text-box p {
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color: #fff;
-}
 nav .fa {
     display: none;
 }
-.hero-btn1 {
-    display: inline-block;
-    text-decoration: none;
-    color: #42f54b;
-    border: 1px solid #42f54b;
-    border-radius: 5px;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
+.nav-icon {
+    color: #ffffff;
 }
-.hero-btn1:hover {
-    color: #fff;
-    border: 1px solid #5DE2E7;
-    background-color: #2775A5;
-    transition: 1s;
+.nav-links #btn {
+    color: #ffffff;
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
 }
-body{
-    background: #fafafa;
-}
-@media (max-width: 700px) {
-    .text-box h1 {
-        font-size: 20px;
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+        padding: 190px 0 0 0;
+    }
+    .img-container img {
+        grid-area: picture;
+        width: 70%;
+        height: 80%;
+        padding: 1px;
+        border-radius: 10px;
     }
     .nav-links ul li {
         display: block;
@@ -101,9 +122,13 @@ body{
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -200px;
+        right: -250px;
+        text-align: left;
         z-index: 2;
         transition: 1s;
+    }
+    .nav-links ul {
+        padding: 30px;
     }
     nav .fa {
         display: block;
@@ -112,22 +137,20 @@ body{
         font-size: 22px;
         cursor: pointer;
     }
-    .nav-links ul {
-        padding: 30px;
+    .nav-links ul li a{
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
     }
 }
 
 h1 {
-    font-size: 36px;
+    color: #fafdff;
+    font-size: 64px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
-}
-p {
-    color: #999898;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px 10px 10px 0;
-    text-align: left;
 }
 h2 {
     font-size: 20px;
@@ -143,11 +166,6 @@ h4 {
 h3 {
     text-align: center;
     font-weight: 600;
-}
-@media(max-width: 700px) {
-    .row {
-        flex-direction: column;
-    }
 }
 
 /* --------------------- Grid -----------------------*/
@@ -169,8 +187,8 @@ h3 {
 }
 .img-container img {
     grid-area: picture;
-    width: 65%;
-    height: 100%;
+    width: 95%;
+    height: 90%;
     padding: 1px;
     border-radius: 10px;
 }
@@ -179,67 +197,28 @@ h3 {
     padding: 1px;
     text-align: left;
 }
+.txt-container p {
+    line-height: 1.5;
+    text-align: left;
+    word-wrap: break-word;
+}
 .spec-container {
     grid-area: specification;
     padding: 1px;
     text-align: left;
+}
+.spec-container p {
+    line-height: 1.5;
+    text-align: left;
+    word-wrap: break-word;
 }
 .manual-container {
     /* grid-area: 6 / 1 / 7 / 7; /* row-start col-start row-end col-end */
     grid-area: manual;
     padding: 1px;
 }
-
-/* ------------------- Footer -------------------- */
-.footer {
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-}
-.footer h4 {
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-}
-.footer p {
-    margin-bottom: 3px;
-    margin-top: 20px;
-    color: #999898;
-    font-size: 10px;
-    line-height: 22px;
-    text-align: center;
-}
-.icons {
-    color: #134585;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-}
-.fa-heart-o {
-    color: #134585;
-}
-
-/*------------- subMenu ----------------*/
-
-.submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #66ccff;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.submenu li {
-    margin: 0;
-}
-
-.submenu a {
-    padding: 1em;
-}
-
-nav li:hover .submenu {
-    display: block;
+.manual-container p {
+    line-height: 1.5;
+    text-align: left;
+    word-wrap: break-word;
 }
