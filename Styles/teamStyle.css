@@ -17,6 +17,7 @@
 }
 .teamContainer-header {
     grid-area: header1;
+    min-height:100vh;
     background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url('https://r4.wallpaperflare.com/wallpaper/483/576/977/1920x1080-px-abstract-hexagon-minimalism-simple-nature-water-hd-art-wallpaper-6990a83d517aad5bf697e8cff071669d.jpg');
     background-position: center;
     background-size: cover;
