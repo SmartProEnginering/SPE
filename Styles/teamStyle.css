@@ -26,8 +26,9 @@
 .teamContainer-header p {
     color: #ffffff;
     text-align: center;
-    padding: 90px 110px 10px 110px;
+    margin: 90px 110px 10px 110px;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
 }
 .teamContainer-body {
     grid-area: body1;
@@ -92,7 +93,8 @@
 
 }
 .EngineerTxt-container p {
-    padding: 5px;
+    line-height: 1.5;
+    Margin: 5px;
     color: #ffffff;
     text-align: left;
     word-wrap: break-word;
@@ -138,7 +140,7 @@ h1 {
     content: '';
     width: 0;
     height: 3px;
-    background-color: #02ccb8;
+    background-color: #00bfff;
     display: block;
     margin: auto;
     transition: 0.4s;
@@ -174,8 +176,9 @@ h1 {
     .teamContainer-header p {
         color: #f2f5f4;
         text-align: left;
-        padding: 80px 30px 20px 30px;
+        Margin: 80px 30px 20px 30px;
         font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
     }
     .EngineerHeader-container h4 {
         font-weight: 800;
@@ -206,7 +209,8 @@ h1 {
 
     }
     .EngineerTxt-container p {
-        padding: 2px 5px 0 40px;
+        Margin: 2px 5px 0 40px;
+        line-height: 1.5;
         color: #ffffff;
         text-align: left;
         word-wrap: break-word;
