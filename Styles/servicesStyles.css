@@ -7,7 +7,7 @@
     display: grid;
     grid-template-rows: 0.8fr 3fr 0.2fr;
     grid-template-columns: auto;
-    height: 320vh;
+    height: 390vh;
     gap: 1em;
     grid-template-areas:
     'header1'
@@ -159,6 +159,7 @@ nav .fa {
 h1 {
     color: #fafdff;
     font-size: 64px;
+    margin-top: 50px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
@@ -175,6 +176,7 @@ h4 {
 .container {
     margin: 30px;
     display: grid;
+    justify-content: space-around;
     grid-template-rows: 60px 300px 50px;
     grid-template-columns: 1fr 1.3fr;
     grid-gap: 1em;
