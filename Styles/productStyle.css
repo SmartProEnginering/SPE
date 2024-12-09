@@ -4,46 +4,118 @@
     padding:1px;
     font-family: 'Poppins', sans-serif;
 }
-.productContainer {
+.contactContainer {
     display: grid;
     grid-template-rows: 0.8fr 3fr 0.2fr;
     grid-template-columns: auto;
-    height: 376vh;
+    height: 140vh;
     gap: 1em;
     grid-template-areas:
     'header1'
     'body1'
     'footer1';
 }
-.productContainer-header {
+.contactContainer-header {
     grid-area: header1;
-    min-height:100vh;
+    min-height:140vh;
     background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url('https://r4.wallpaperflare.com/wallpaper/483/576/977/1920x1080-px-abstract-hexagon-minimalism-simple-nature-water-hd-art-wallpaper-6990a83d517aad5bf697e8cff071669d.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
 }
-.productContainer-header p {
+.contactContainer-header p {
     color: #ffffff;
     text-align: center;
-    margin: 90px 110px 10px 110px;
+    margin: 5px 0 0 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
 }
-.productContainer-body {
+.contactContainer-body {
     grid-area: body1;
     overflow: hidden;
 }
-.productContainer-footer {
+.contactContainer-footer {
     grid-area: footer1;
 }
-.productContainer-footer p {
+.contactContainer-footer p {
     color: #637075;
     text-align: center;
     font-size: 11px;
     margin: 80px 0 0 0;
 }
+.hero-btn {
+    margin: 20px 0 0 0;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    align-self: center;
+}
+.hero-btn:hover {
+    border: 2px solid #5DE2E7;
+    background-color: #2775A5;
+    transition: 1s;
+}
 
+/*------------------- Engineer Container --------------------*/
+
+:root {
+    --container-background: transparent; /* Default background */
+}
+.contactContainer-form {
+    margin: 50px 70px 0 60px;
+    display: grid;
+    grid-template-rows: repeat(3, 70px);
+    grid-template-columns: 1fr 1.3fr;
+    gap: 1em;
+    grid-template-areas:
+    'Name Message'
+    'Email Message'
+    'Phone Message';
+    background: var(--container-background);
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.contactContainer-form-Name {
+    grid-area: Name;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contactContainer-form-Email {
+    grid-area: Email;
+    border: 0;
+    border-radius: 10px;
+}
+.contactContainer-form-Phone{
+    grid-area: Phone;
+    border: 0;
+    border-radius: 10px;
+}
+.contactContainer-form-Message {
+    grid-area: Message;
+    border: 0;
+    border-radius: 10px;
+}
+
+
+/* --------------------- Nav ---------------------*/
+
+h1 {
+    color: #fafdff;
+    font-size: 64px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
 nav {
     display: flex;
     padding: 2% 6%;
@@ -53,8 +125,11 @@ nav {
 nav img {
     width: 150px;
 }
+nav .fa {
+    display: none;
+}
+
 .nav-links {
-    flex: 1;
     text-align: right;
 }
 .nav-links ul li{
@@ -64,24 +139,24 @@ nav img {
     position: relative;
 }
 .nav-links ul li a{
-    color: #fff;
+    color: #fafdff;
     text-decoration: none;
-    font-size: 13px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 .nav-links ul li::after {
     content: '';
     width: 0;
-    height: 2px;
-    background-color: #9DD9FE;
+    height: 3px;
+    background-color: #00bfff;
     display: block;
     margin: auto;
     transition: 0.4s;
+    border-radius: 30px;
 }
 .nav-links ul li:hover::after {
     width: 100%;
-}
-nav .fa {
-    display: none;
 }
 .nav-icon {
     color: #ffffff;
@@ -104,14 +179,78 @@ nav .fa {
         color: #ffffff;
         font-size: 30px;
         text-align: center;
-        padding: 190px 0 0 0;
+        margin: 70px 0 0 0;
     }
-    .img-container img {
-        grid-area: picture;
-        width: 70%;
-        height: 80%;
-        padding: 1px;
+    .teamContainer {
+        display: grid;
+        grid-template-rows: 0.8fr 3fr 0.01fr;
+        grid-template-columns: auto;
+        height: 450vh;
+        gap: 1em;
+        grid-template-areas:
+    'header1'
+    'body1'
+    'footer1';
+    }
+    .EngineerContainer {
+        margin: 50px 20px 0 20px;
+        display: grid;
+        grid-template-rows: 30px 200px 430px;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        vertical-align: top;
+        horiz-align: center;
+        grid-template-areas:
+    'header'
+    'picture'
+    'description';
+        background: var(--container-background);
         border-radius: 10px;
+        justify-content: space-around;
+        box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3)
+    }
+    .teamContainer-header p {
+        color: #f2f5f4;
+        text-align: left;
+        Margin: 80px 30px 20px 30px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
+    }
+    .EngineerHeader-container h4 {
+        font-weight: 800;
+        color: #ffffff;
+        text-align: left;
+        font-size: 17px;
+        padding: 0 15px 0 0;
+    }
+    .EngineerImg-container{
+        grid-area: picture;
+        margin: 0 0 2px 50px;
+        width: auto;
+        height: auto;
+    }
+    .EngineerImg-container img {
+        width: 200px;
+        height: 100%;
+        border-radius: 10px;
+        align-content: center;
+        margin: 0 0 0 28px;
+    }
+    .EngineerTxt-container {
+        grid-area: description;
+        margin-right: 40px;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+
+    }
+    .EngineerTxt-container p {
+        Margin: 2px 5px 0 40px;
+        line-height: 1.5;
+        color: #ffffff;
+        text-align: left;
+        word-wrap: break-word;
+        font-size: 13px;
     }
     .nav-links ul li {
         display: block;
@@ -144,81 +283,19 @@ nav .fa {
         font-size: 13px;
     }
 }
-
-h1 {
-    color: #fafdff;
-    font-size: 64px;
+.icons {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-}
-h2 {
+    color: #134585;
+    margin: 0 6px 0 6px;
     font-size: 20px;
-    font-weight: 800;
-    text-align: left;
+    cursor: pointer;
+    padding: 18px 0;
 }
-h4 {
-    font-size: 36px;
-    font-weight: 800;
-    color: #0084ff;
-    text-align: left;
-}
-h3 {
+.icons1 {
     text-align: center;
-    font-weight: 600;
-}
-
-/* --------------------- Grid -----------------------*/
-.container {
-    margin: 70px 30px 0 30px;
-    display: grid;
-    grid-template-rows: 60px 300px 400px 100px;
-    grid-template-columns: 1fr 1.3fr;
-    grid-gap: 2em 1em;
-    grid-template-areas:
-    'header header'
-    'picture description'
-    'specification specification'
-    'manual manual';
-}
-.header-container {
-    grid-area: header;
-    padding: 1px;
-}
-.img-container img {
-    grid-area: picture;
-    width: 95%;
-    height: 90%;
-    padding: 1px;
-    border-radius: 10px;
-}
-.txt-container {
-    grid-area: description;
-    padding: 1px;
-    text-align: left;
-}
-.txt-container p {
-    line-height: 1.5;
-    text-align: left;
-    word-wrap: break-word;
-}
-.spec-container {
-    grid-area: specification;
-    padding: 1px;
-    text-align: left;
-}
-.spec-container p {
-    line-height: 1.5;
-    text-align: left;
-    word-wrap: break-word;
-}
-.manual-container {
-    /* grid-area: 6 / 1 / 7 / 7; /* row-start col-start row-end col-end */
-    grid-area: manual;
-    padding: 1px;
-}
-.manual-container p {
-    line-height: 1.5;
-    text-align: left;
-    word-wrap: break-word;
+    color: #148f1a;
+    margin: 0 6px 0 6px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 18px 0;
 }
