@@ -4,44 +4,81 @@
     <meta charset="UTF-8">
     <title>SPE Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Styles/Style2.css">
+    <link rel="stylesheet" href="Styles/contactUsStyles.css">
     <link href="https://fonts.googleapis.com/css2?
      family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
-<section class ="header">
-    <nav>
-        <a href="index2.html"><img src="../Images/SMART_PRO_Transparent_Logo.png"></a>
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="index2.html">ACCEUIL</a></li>
-                <li><a href="products.html">PRODUITS</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="about.html">À PROPOS</a></li>
-                <li><a href="team.html">ÉQUIPE</a></li>
-                <li><a href="contact.html">CONTACTE</a></li>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-        </div>
-    </nav>
-    <div class="text-box">
-        <h1>CONTACT US</h1>
-        <p>Being a fish farmer has never been easier, thanks to
-            the Smart MAQ Kit!</p>
+<div class="contactContainer">
+    <div class="contactContainer-header">
+        <section >
+            <nav>
+                <a href="index.html"><img src="Images/SMART_PRO_Transparent_Logo.png" alt="error"></a>
+
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-xmark fa-2xl nav-icon" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">
+                            <i class="fa-solid fa-house fa-lg nav-icon"></i>
+                            <span>ACCEUIL</span>
+                        </a></li>
+                        <li><a href="products.html">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                            <span>PRODUITS</span>
+                        </a></li>
+                        <li><a href="services.html">
+                            <i class="fa-solid fa-handshake fa-xl nav-icon"></i>
+                            <span>SERVICES</span>
+                        </a></li>
+                        <li><a href="about.html">
+                            <i class="fa-solid fa-building fa-lg nav-icon"></i>
+                            <span>À PROPOS</span>
+                        </a></li>
+                        <li><a href="team.html">
+                            <i class="fa-solid fa-people-group fa-xl nav-icon"></i>
+                            <span>ÉQUIPE</span>
+                        </a></li>
+                        <li><a href="contact.html">
+                            <i class="fa-solid fa-comments fa-xl nav-icon"></i>
+                            <span>CONTACTE</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars fa-2xl nav-icon" id="btn" onclick="showMenu()"></i>
+            </nav>
+        </section>
+        <section>
+            <h1>Entrez en contact</h1>
+        </section>
+        <section>
+            <i class="fa-solid fa-phone nav-icon"></i><p>Tel : +237 6 96 70 26 15</p>
+            <p><i class="fa-solid fa-envelope  nav-icon"></i><p>Email :  cabrelediango@gmail.com</p></p>
+            <i class="fa-solid fa-location  nav-icon"></i><p>Addresse : Logebessou Douala </p>
+            <div class="contactContainer-form">
+                <input type="text" class="contactContainer-form-Name"
+                placeholder="Votre Nom*" required>
+                <input type="email" class="contactContainer-form-Email"
+                placeholder="Votre Email*" required>
+                <input type="text" class="contactContainer-form-Phone"
+                placeholder="Votre Numéro*" required>
+                <input type="text" class="contactContainer-form-Message"
+                       placeholder="Votre Message*" required>
+                <a href="#" class="hero-btn">Envoyer</a>
+            </div>
+        </section>
+        <section>
+            <div class="icons">
+                <i class="fa-brands fa-square-facebook icons"></i>
+                <i class="fa-brands fa-whatsapp icons1"></i>
+                <i class="fa-brands fa-linkedin icons"></i>
+            </div>
+            <p>© 2024 Smart Pro Engineering</p>
+        </section>
     </div>
-</section>
-<! --------------- Footer ------------------- >
-<section class="footer">
-    <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-    </div>
-    <p>© 2024 Smart Pro Engineering</p>
-</section>
-<script src="../js files/index.js"></script>
+
+</div>
+
+<script src="Scripts/index.js"></script>
 </body>
 </html>
