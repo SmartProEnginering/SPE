@@ -5,9 +5,9 @@
 }
 .homeContainer {
     display: grid;
-    grid-template-rows: 0.8fr 3fr 0.2fr;
+    grid-template-rows: 1fr 3fr 100px;
     grid-template-columns: auto;
-    height: 520vh;
+    height: 410vh;
     gap: 1em;
     grid-template-areas:
     'header1'
@@ -16,11 +16,20 @@
 }
 .homeContainer-header {
     grid-area: header1;
-    min-height:100vh;
+    justify-content: center;
+    height: 100vh;
     background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.3)), url('https://r4.wallpaperflare.com/wallpaper/483/576/977/1920x1080-px-abstract-hexagon-minimalism-simple-nature-water-hd-art-wallpaper-6990a83d517aad5bf697e8cff071669d.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
+}
+.homeContainer-header h1 {
+    color: #fafdff;
+    font-size: 64px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
 }
 .homeContainer-header p {
     color: #ffffff;
@@ -175,13 +184,7 @@ nav .fa {
     text-align: center;
     padding-top: 100px;
 }
-h1 {
-    color: #fafdff;
-    font-size: 64px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-}
+
 
 .row {
     margin-top: 5%;
@@ -203,6 +206,15 @@ h1 {
     box-sizing: border-box;
     transition: 0.5s;
 }
+.service-col li {
+    text-align: left;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+.service-col p {
+    text-align: left;
+    line-height: 1.5;
+}
 h2 {
     font-size: 36px;
     font-weight: 800;
@@ -215,9 +227,15 @@ h4 {
     text-align: left;
 }
 h3 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #0084ff;
+    padding:0;
+    font-size: 20px;
+    font-weight: 700;
+    background: transparent;
+    cursor: pointer;
+    align-self: center;
 }
 .service-col:hover {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
@@ -300,6 +318,7 @@ h3 {
 }
 .products-col img {
     width: 85%;
+    height: 270px;
     border-radius: 10px;
 }
 .products-col p {
@@ -403,7 +422,16 @@ h3 {
 .icons {
     text-align: center;
     color: #134585;
-    margin: 0 13px;
+    margin: 0 6px 0 6px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.icons1 {
+    text-align: center;
+    color: #148f1a;
+    margin: 0 6px 0 6px;
+    font-size: 20px;
     cursor: pointer;
     padding: 18px 0;
 }
