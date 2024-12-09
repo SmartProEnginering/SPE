@@ -422,16 +422,18 @@ h3 {
 .icons {
     text-align: center;
     color: #134585;
-    margin: 0 6px 0 6px;
-    font-size: 20px;
+    margin-right: 10px; /* Adjust spacing between icons */ 
+    font-size: 24px; /* Adjust icon size */ 
+    text-decoration: none; /* Remove underline from links */
     cursor: pointer;
     padding: 18px 0;
 }
 .icons1 {
     text-align: center;
     color: #148f1a;
-    margin: 0 6px 0 6px;
-    font-size: 20px;
+    margin-right: 10px; /* Adjust spacing between icons */ 
+    font-size: 24px; /* Adjust icon size */ 
+    text-decoration: none; /* Remove underline from links */
     cursor: pointer;
     padding: 18px 0;
 }
